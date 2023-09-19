@@ -17,8 +17,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Episodes from "./Pages/Episodes";
 import Location from "./Pages/Location";
 
-
-
 function App() {
   return (
     <Router>
@@ -28,7 +26,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:id" element={<CardDetails />} />
-        
 
         <Route path="/episodes" element={<Episodes />} />
         <Route path="/episodes/:id" element={<CardDetails />} />
@@ -65,7 +62,7 @@ const Home = () => {
 
   return (
     <>
-    <h1 className="text-center mb-4">Personajes</h1>
+      <h1 className="text-center mb-4">Personajes</h1>
       <Search setSearch={setSearch} setpageNumber={setpageNumber} />
 
       <div className="container">
